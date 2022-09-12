@@ -22,7 +22,7 @@ function convertUnits($startVal, $startUnits, $endUnits) {
         $mlToCup = $i * 0.00422675;
         
       while($i<=1000){
-        echo "<tr><td>$i</td><td>" . abs($mlToCup) ." </td><td>" . abs($mlToOz). "</td></tr><tr>";
+        echo "<tr><td>$i</td><td>" . /*abs($mlToCup)*/ sprintf('%.2f', $mlToCup) ." </td><td>" . /*abs($mlToOz)*/ sprintf('%.2f', $mlToOz) . "</td></tr><tr>";
         break;
       }
       $mlToCup++;
